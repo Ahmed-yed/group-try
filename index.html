@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="container">
+    <div class="row w-75 m-auto py-5">
+        <div class="form-group">
+            <label for="productNameInp"> prdouct name</label>
+            <input   id="productNameInp" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="productPriceInp"> prdouct price</label>
+            <input   id="productPriceInp" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="productCatgeoryInp"> prdouct category</label>
+            <input   id="productCatgeoryInp" class="form-control" type="text">
+        </div>
+        <div class="form-group mt-2">
+            <label for="productDescInp"> prdouct describe</label>
+           <textarea  id="productDescInp"  class="form-control"></textarea>
+        </div>
+       
+        
+    </div>
+    <button onclick="addProduct()" class="btn btn-info mb-2" style="margin-left: 180px;"> Add product</button>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 m-auto"></div>
+        <input onkeyup="search(globalThis.value)" type="text">
+    </div>
+    <table class="table">
+        <thead>
+            <th>index</th>
+            <th>product name</th>
+            <th>product price</th>
+            <th>product catg </th>
+            <th>product desc</th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+        <tbody id="Table1">
+            
+        </tbody>
+    </table>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
